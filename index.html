@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Encriptador de texto</title>
+  
+</head>
+
+
+<body>
+    <header>
+        <img src="./assets/Logo.png" alt="alura">
+        <h1>Encriptador de Texto</h1>
+    </header>
+    <main>
+
+
+        <div>
+            <!-- Campo de entrada para el texto original -->
+            <textarea id="texto-original" placeholder="Introduce el texto aquí"></textarea>
+
+        </div>
+
+        <div id="mensaje-error" style="display: none;">
+            <span>&#9888</span>
+            Solo letras minúsculas y sin acentos
+        </div>
+
+        <div class="botones">
+            <!-- Botón para encriptar -->
+            <button onclick="encriptarTexto()">Encriptar</button>
+            <button onclick="desencriptarTexto()">Desencriptar</button>
+            <button onclick="copiarTexto()">Copiar</button>
+        </div>
+    </main>
+    <footer>
+        Emilio Perdiguero 2024
+    </footer>
+
+    <script src="./app.js">
+
+    </script>
+</body>
+
+</html>
